@@ -1,0 +1,10 @@
+.gameHistoryDetailsPage {
+  position: relative;
+  min-height: 100%;
+  display: flex;
+
+  &__main {
+    flex-grow: 1;
+    padding: 70px 10px 10px;
+  }
+}

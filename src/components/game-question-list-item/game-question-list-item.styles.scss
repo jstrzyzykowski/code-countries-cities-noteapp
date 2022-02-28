@@ -1,0 +1,137 @@
+.gameCategoryListItem {
+  &__content {
+    padding: 5px;
+    display: flex;
+    background-color: rgba(255,255,255,0.2);
+    padding: 10px;
+    border-radius: 12px;
+    border-bottom: 3px solid #4B3A92;
+
+    &-confirmButton {
+      border: none;
+      margin-right: 10px;
+      margin-bottom: 2px;
+      width: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      // color: white;
+      color: whitesmoke;
+      border-radius: 10px;
+      background-color: #F9CA2A;
+      box-shadow: 0 4px 1px 0 #EAA800;
+      text-shadow: 0 2px 1px #a57900;
+
+      &.inactive {
+      background-color: #D9DADD;
+      box-shadow: 0 4px 1px 0 #acacac;
+      color: gray;
+      text-shadow: 0 2px 1px #ffffff;
+      }
+
+      &.confirmed {
+        background-color: #73BB6D;
+        box-shadow: 0 4px 1px 0 #4D993F;
+        text-shadow: 0 2px 1px #3f7a34;
+      }
+
+      // &.progress {
+      //   background-color: #D9DADD;
+      //   box-shadow: 0 4px 1px 0 #8F9099;
+      //   color: gray;
+      // }
+
+      // &.check {
+      //   background-color: #F9CA2A;
+      //   box-shadow: 0 4px 1px 0 #EAA800;
+      // }
+
+      // &.ready {
+      //   background-color: #73BB6D;
+      //   box-shadow: 0 4px 1px 0 #4D993F;
+      // }
+
+      i {
+        font-size: 32px;
+      }
+    }
+
+    &-text {
+      flex-grow: 1;
+      display: flex;
+      flex-direction: column;
+
+      &-categoryName {
+        font-size: 14px;
+        text-transform: uppercase;
+        // letter-spacing: 1px;
+        font-weight: bold;
+        margin-bottom: 2px;
+        color: whitesmoke;
+      }
+
+      &-input {
+        flex-grow: 1;
+        font-size: 14px;
+        padding: 6px;
+        border: none;
+        border-radius: 6px;
+        font-family: 'Montserrat', sans-serif;
+      }
+    }
+  }
+
+  &__checker {
+    display: flex;
+    justify-content: flex-end;
+    margin-left: auto;
+    justify-self: flex-end;
+    padding-right: 10px;
+
+    &-label {
+      width: 36px;
+      height: 35px;
+      box-sizing: content-box;
+      background-color: #E45A53;
+      box-shadow: 0 4px 1px 0 #B32A43;
+      text-shadow: 0 2px 1px #811f31;
+      border-top: 3px solid #4B3A92;
+      position: relative;
+      transform: translateY(-8px);
+      border-radius: 8px;
+      margin-right: 4px;
+
+      &.checked {
+        background-color: #73BB6D;
+        box-shadow: 0 4px 1px 0 #4D993F;
+        text-shadow: 0 2px 1px #3f7a34;
+      }
+
+      &.inactive {
+        background-color: #D9DADD;
+        box-shadow: 0 4px 1px 0 #8F9099;
+        text-shadow: 0 2px 1px #ffffff;
+        
+        .gameCategoryListItem__checker-label-value {
+          color: gray;
+        }
+      }
+
+      &-input {
+        position: absolute;
+        top: 0;
+        opacity: 0;
+      }
+
+      &-value {
+        height: 100%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: bold;
+        color: whitesmoke;
+      }
+    }
+  }
+}

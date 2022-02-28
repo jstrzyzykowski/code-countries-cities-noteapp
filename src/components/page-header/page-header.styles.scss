@@ -1,0 +1,42 @@
+.pageHeader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 50px;
+  padding: 0 10px;
+  display: flex;
+  align-items: center;
+  background-color: #4F3D9E;
+  color: whitesmoke;
+  z-index: 10;
+
+  &__backButton {
+    height: 35px;
+    width: 35px;
+    border: none;
+    margin-right: 10px;
+    border-radius: 10px;
+    box-shadow: 0 3px 1px 0 #6C5ACF;
+    background-color: rgb(241, 241, 241);
+    background-color: #7C6AE0;
+    text-shadow: 0 2px 1px #4F3EA0;
+    margin-bottom: 3px;
+
+    i {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+      color: whitesmoke;
+    }
+  }
+
+  &__title {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 18px;
+  }
+}

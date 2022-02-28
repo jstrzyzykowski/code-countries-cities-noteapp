@@ -1,0 +1,46 @@
+.historyRoundListItem {
+  background-color: rgba(255,255,255,0.2);
+  display: flex;
+  align-items: center;
+  height: 56px;
+  padding: 0 10px;
+  border-radius: 10px;
+  border-bottom: 3px solid #4B3A92;
+  
+
+  &__roundNumber {
+    border-radius: 6px;
+    background-color: #D9DADD;
+    box-shadow: 0 4px 1px 0 #acacac;
+    text-shadow: 0 2px 1px #ffffff;
+    margin-right: 10px;
+    width: 35px;
+    height: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 4px;
+    font-weight: bold;
+    color: gray;
+  }
+
+  &__roundPoints {
+    flex-grow: 1;
+    font-weight: bold;
+    font-size: 14px;
+    color: whitesmoke;
+  }
+
+  &__detailsButton {
+    border: none;
+    height: 35px;
+    padding: 0 20px;
+    box-shadow: 0 4px 0 0 #4D993F;
+    margin-bottom: 4px;
+    border-radius: 6px;
+    background-color: #73BB6D;
+    text-shadow: 0 2px 1px #3f7a34;
+    font-weight: bold;
+    color: whitesmoke;
+  }
+}
